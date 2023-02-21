@@ -1,0 +1,34 @@
+/*
+ * Assignment name  : is_power_of_2
+ * Expected files   : is_power_of_2.c
+ * Allowed functions: None
+ * --------------------------------------------------------------
+ *
+ * Write a function that determines if a given number is a power of 2.
+ *
+ * This function returns 1 if the given number is a power of 2, otherwise it returns 0.
+ *
+ * Your function must be declared as follows:
+ *
+ * int	    is_power_of_2(unsigned int n);
+ * */
+
+ int	is_power_of_2(unsigned int n)
+{
+	if (n == 1)
+		return (1);
+	else if (n % 2 != 0 || n == 0)
+		return (0);
+	return (is_power_of_2(n / 2));
+}
+
+/*
+#include <stdio.h>
+int	main(void)
+{
+	unsigned int	a = 0;
+
+	while (a++ < 17)
+		is_power_of_2(a) == 1? printf("%u: is power of 2\n", a): printf("%u: NOT power of 2\n", a);
+	return (0);
+}*/
