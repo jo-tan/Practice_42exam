@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int	ft_isspace(int	c)
+/*int	ft_isspace(int	c)
 {
 	if (c >= 9 && c <= 13)
 		return (1);
@@ -8,6 +8,11 @@ int	ft_isspace(int	c)
 		return (1);
 	else
 		return (0);
+}*/
+
+int	ft_isspace(char c)
+{
+	return ((c >= 9 && c <= 13) || c == 32)
 }
 
 void	rev_wstr(char *s)
