@@ -23,7 +23,7 @@ int	ft_is_lc(char c)
  * > if space ; flag = 1 and write(space)
  * > else if flag = 1 && is lc ; char -= 32, flag = 0 and write(char)
  * > else if flag = 1 && is uc ; flag = 0 and write(char)
- * > else if flaf = 0 && is lc ; write(char) << This is not doing much, but I write it down so I know I handle this possibility
+ * > else if flag = 0 && is lc ; write(char) << This is not doing much, but I write it down so I know I handle this possibility
  * > else if flag = 0 && is uc ; char += 32 and write(char)
  * > else ; flag = 0 and write(char) << handle case like " ?And " 
  *
